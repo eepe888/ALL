@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "yzhang.markdown-all-in-one",
+    "davidanson.vscode-markdownlint",
+    "bradlc.vscode-tailwindcss",
+    "msjsdiag.vscode-react-native",
+    "editorconfig.editorconfig"
+  ]
+}

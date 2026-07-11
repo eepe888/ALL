@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+.expo/
+.next/
+out/
+
+# Env
+.env
+.env.local
+.env*.local
+
+# Build
+build/
+dist/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
