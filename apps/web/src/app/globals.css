@@ -24,3 +24,37 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Leaflet marker icons are injected as raw HTML strings (see MapView.tsx),
+   so their pop/pulse motion has to live in a real stylesheet instead of
+   Tailwind utility classes. */
+@keyframes marker-pulse-ring {
+  0% {
+    transform: scale(0.6);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
+
+@keyframes marker-pop-in {
+  0% {
+    transform: scale(0) rotate(-45deg);
+  }
+  60% {
+    transform: scale(1.15) rotate(-45deg);
+  }
+  100% {
+    transform: scale(1) rotate(-45deg);
+  }
+}
+
+.marker-pulse-ring {
+  animation: marker-pulse-ring 2s ease-out infinite;
+}
+
+.marker-pop-in {
+  animation: marker-pop-in 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}

@@ -69,6 +69,9 @@ export async function fetchNearbyCafes(
       distanceMeters: Math.round(
         haversineDistance(origin, { lat: el.lat, lon: el.lon })
       ),
+      // OSM tags a POI with `brand` (and usually `brand:wikidata`) when it
+      // belongs to a chain; independent shops leave both untagged.
+      isChain: Boolean(el.tags!.brand || el.tags!["brand:wikidata"]),
     }))
     .sort((a, b) => a.distanceMeters - b.distanceMeters);
 }
