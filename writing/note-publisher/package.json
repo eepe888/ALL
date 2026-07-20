@@ -1,0 +1,14 @@
+{
+  "name": "note-publisher",
+  "private": true,
+  "version": "1.0.0",
+  "description": "writing/articles の記事のタイトル・本文をNoteの新規記事ページに流し込む準備をするツール(貼り付けと保存は手動)",
+  "scripts": {
+    "publish": "node publish-draft.js",
+    "svg2png": "node svg-to-png.js",
+    "copy-image": "powershell -NoProfile -ExecutionPolicy Bypass -File ./copy-image.ps1"
+  },
+  "dependencies": {
+    "playwright": "^1.48.0"
+  }
+}

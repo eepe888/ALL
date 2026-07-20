@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <text x="60" y="90" font-family="'Hiragino Sans', 'Yu Gothic', sans-serif" font-size="40" font-weight="700" fill="#f8fafc">
+    AI生成 → 下書き自動アップ
+  </text>
+  <text x="60" y="135" font-family="'Hiragino Sans', 'Yu Gothic', sans-serif" font-size="22" fill="#94a3b8">
+    noteの記事づくりを仕組み化する3ステップ
+  </text>
+
+  <!-- Step 1 -->
+  <g transform="translate(70,230)">
+    <rect width="300" height="220" rx="18" fill="#111827" stroke="#334155" stroke-width="2"/>
+    <circle cx="45" cy="45" r="22" fill="url(#accent)"/>
+    <text x="45" y="53" font-family="sans-serif" font-size="22" font-weight="700" fill="#0f172a" text-anchor="middle">1</text>
+    <text x="30" y="105" font-family="'Hiragino Sans', 'Yu Gothic', sans-serif" font-size="22" font-weight="700" fill="#f1f5f9">AIで執筆</text>
+    <text x="30" y="140" font-family="'Hiragino Sans', 'Yu Gothic', sans-serif" font-size="16" fill="#94a3b8">テーマ・読者・文字数を渡し</text>
+    <text x="30" y="164" font-family="'Hiragino Sans', 'Yu Gothic', sans-serif" font-size="16" fill="#94a3b8">Markdownで下地を生成</text>
+  </g>
+
+  <!-- Arrow 1 -->
+  <path d="M395 340 L455 340" stroke="#475569" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- Step 2 -->
+  <g transform="translate(460,230)">
+    <rect width="300" height="220" rx="18" fill="#111827" stroke="#334155" stroke-width="2"/>
+    <circle cx="45" cy="45" r="22" fill="url(#accent)"/>
+    <text x="45" y="53" font-family="sans-serif" font-size="22" font-weight="700" fill="#0f172a" text-anchor="middle">2</text>
+    <text x="30" y="105" font-family="'Hiragino Sans', 'Yu Gothic', sans-serif" font-size="22" font-weight="700" fill="#f1f5f9">ファイル化</text>
+    <text x="30" y="140" font-family="'Hiragino Sans', 'Yu Gothic', sans-serif" font-size="16" fill="#94a3b8">frontmatter付きの</text>
+    <text x="30" y="164" font-family="'Hiragino Sans', 'Yu Gothic', sans-serif" font-size="16" fill="#94a3b8">Markdownとして保存</text>
+  </g>
+
+  <!-- Arrow 2 -->
+  <path d="M785 340 L845 340" stroke="#475569" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- Step 3 -->
+  <g transform="translate(850,230)">
+    <rect width="280" height="220" rx="18" fill="#111827" stroke="#22d3ee" stroke-width="2"/>
+    <circle cx="45" cy="45" r="22" fill="url(#accent)"/>
+    <text x="45" y="53" font-family="sans-serif" font-size="22" font-weight="700" fill="#0f172a" text-anchor="middle">3</text>
+    <text x="30" y="105" font-family="'Hiragino Sans', 'Yu Gothic', sans-serif" font-size="22" font-weight="700" fill="#f1f5f9">下書き保存</text>
+    <text x="30" y="140" font-family="'Hiragino Sans', 'Yu Gothic', sans-serif" font-size="16" fill="#94a3b8">コピー&amp;貼り付けは自分の手で</text>
+    <text x="30" y="164" font-family="'Hiragino Sans', 'Yu Gothic', sans-serif" font-size="16" fill="#94a3b8">note側の自動保存に任せる</text>
+  </g>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#475569"/>
+    </marker>
+  </defs>
+
+  <!-- Callout -->
+  <rect x="60" y="500" width="1080" height="80" rx="14" fill="#052e2b" stroke="url(#accent)" stroke-width="2"/>
+  <text x="90" y="548" font-family="'Hiragino Sans', 'Yu Gothic', sans-serif" font-size="22" font-weight="700" fill="#5eead4">
+    公開ボタンは押さない。最終確認は必ず人の目で。
+  </text>
+</svg>
