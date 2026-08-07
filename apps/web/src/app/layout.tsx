@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Link from "next/link";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -37,6 +38,14 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="flex h-full flex-col pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)]">
+        <nav className="flex shrink-0 gap-3 border-b border-zinc-200 px-4 py-1.5 text-xs dark:border-zinc-800">
+          <Link href="/" className="text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100">
+            ☕ カフェ検索
+          </Link>
+          <Link href="/nail-ar" className="text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100">
+            💅 ネイルAR試着
+          </Link>
+        </nav>
         {children}
       </body>
     </html>
