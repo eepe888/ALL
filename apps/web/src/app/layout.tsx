@@ -45,6 +45,9 @@ export default function RootLayout({
           <Link href="/nail-ar" className="text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100">
             💅 ネイルAR試着
           </Link>
+          <Link href="/e-sagashi" className="text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100">
+            🔍 絵探しゲーム
+          </Link>
         </nav>
         {children}
       </body>
